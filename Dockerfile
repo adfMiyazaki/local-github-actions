@@ -12,3 +12,4 @@ RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/instal
 RUN apt install -y gcc
 RUN export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH" && brew install act
 RUN curl https://raw.githubusercontent.com/nektos/act/master/install.sh | bash
+RUN echo export PATH="/home/linuxbrew/.linuxbrew/bin/:\$PATH" >> /root/.bashrc
